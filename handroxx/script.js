@@ -256,3 +256,4 @@ function generateBill() {
   billWindow.document.close();
   billWindow.print(); // Opens print/download dialog
 }
+console.log("JS loaded");
