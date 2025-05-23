@@ -6,10 +6,13 @@ export default defineConfig({
   build: {
     outDir: '../dist',
     emptyOutDir: true,
+    assetsDir: 'assets',
     rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'handroxx/index.html')
+      input: resolve(__dirname, 'handroxx/index.html'),
+      output: {
+        assetFileNames: 'assets/[name][extname]'
       }
     }
-  }
+  },
+  publicDir: 'public'
 })
