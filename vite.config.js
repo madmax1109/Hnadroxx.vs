@@ -1,12 +1,15 @@
 import { defineConfig } from 'vite'
+import { resolve } from 'path'
 
 export default defineConfig({
-  root: '.',
+  root: 'handroxx',
   build: {
+    outDir: '../dist',
+    emptyOutDir: true,
     rollupOptions: {
       input: {
-        main: 'handroxx/index.html',
-      },
-    },
-  },
+        main: resolve(__dirname, 'handroxx/index.html')
+      }
+    }
+  }
 })
