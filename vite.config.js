@@ -1,5 +1,12 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  root: 'handroxx'
+  root: '.',
+  build: {
+    rollupOptions: {
+      input: {
+        main: 'handroxx/index.html',
+      },
+    },
+  },
 })
