@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Handroxx Men's Jewelry</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="header-overlay">
+      <div class="header-content">
+        <h1>Handroxx Accessories</h1>
+        <p class="tagline">Men's Chains & Bracelets</p>
+        <nav>
+          <ul>
+            <li><a href="#chains">Chains</a></li>
+            <li><a href="#bracelets">Bracelets</a></li>
+            <li><a href="#checkout">Checkout</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Chains Section -->
+  <section id="chains" class="product-section">
+    <h2>Men's Chains</h2>
+    <div class="products">
+      <div class="product" data-name="Dynamic Chain" data-price="149">
+        <img src="chain1.jnp.jpg" alt="Dynamic Chain" />
+        <h3>Dynamic Chain</h3>
+        <p>Rs. 149</p>
+        <button onclick="addToCart(this)">Add to Cart</button>
+      </div>
+      <div class="product" data-name="Deathly Black Bar Pendant Chain" data-price="149">
+        <img src="chain2.jpg.jpg" alt="Deathly Black Bar Pendant Chain" />
+        <h3>Deathly Black Bar Pendant Chain</h3>
+        <p>Rs. 149</p>
+        <button onclick="addToCart(this)">Add to Cart</button>
+      </div>
+      <div class="product" data-name="Black Octagon Chain" data-price="149">
+        <img src="chain3.jp.jpg" alt="Black Octagon Chain" />
+        <h3>Black Octagon Chain</h3>
+        <p>Rs. 149</p>
+        <button onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bracelets Section -->
+  <section id="bracelets" class="product-section">
+    <h2>Men's Bracelets</h2>
+    <div class="products">
+      <div class="product" data-name="Black and White Bead Evil Eye Bracelet" data-price="149">
+        <img src="bracelet2.jpg.jpg" alt="Black and White Bead Evil Eye Bracelet" />
+        <h3>Black and White Bead Evil Eye Bracelet</h3>
+        <p>Rs. 149</p>
+        <button onclick="addToCart(this)">Add to Cart</button>
+      </div>
+      <div class="product" data-name="Magnetic Couple Bracelet" data-price="149">
+        <img src="magnet cb.png.png" alt="Magnetic Couple Bracelet" />
+        <h3>Magnetic Couple Bracelet</h3>
+        <p>Rs. 149</p>
+        <button onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Checkout Section -->
+   <div id="checkout-section" class="hidden">
+  <h2>Your Cart</h2>
+  <div id="cart"></div>
+  <p>Total: ₹<span id="total"></span></p>
+  <button onclick="proceedToCheckout()">Final Checkout</button>
+</div>
+  <section id="checkout">
+    <h2>Checkout</h2>
+    <div id="cart"></div>
+    <p>Total: <span id="total"></span> Rs</p>
+    <p>Pay using UPI ID: <strong>jadhavs01@ptyes</strong></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Handroxx. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
